@@ -95,9 +95,14 @@ http://127.0.0.1:8000
 - Jangan lupa ubah permission folder `storage` dan `bootstrap/cache` jika error permission.
 - `.env` tidak disarankan diupload ke GitHub karena menyimpan konfigurasi sensitif.
 - Untuk memastikan semua fitur jalan, pastikan `mod_rewrite` Apache aktif.
+## 💾 Database Backup
 
+File backup database tersedia di:
 ---
-
+Untuk mengimpor:
+1. Buka `phpMyAdmin`
+2. Buat database baru (misal: `fdrix`)
+3. Pilih tab `Import`, lalu upload `db_fdrix.sql`
 ## 👤 Author
 
 - Nama: [Kelompok]
