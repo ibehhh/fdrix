@@ -1,113 +1,104 @@
-<<<<<<< HEAD
-# 🚀 fdrix
+# 📦 PORTOFOLIO Laravel Project
 
-fdrix adalah [deskripsi singkat project kamu di sini, misalnya: "aplikasi web untuk manajemen data X berbasis Next.js dan Tailwind CSS."]
-
-## ✨ Features
-
-- [x] Fitur 1
-- [x] Fitur 2
-- [x] Fitur 3
-
-## 📦 Tech Stack
-
-- Next.js
-- Tailwind CSS
-- TypeScript / JavaScript
-- [Tambahkan teknologi lain yang digunakan]
+Project ini adalah aplikasi Laravel yang berjalan di lingkungan lokal menggunakan XAMPP atau Laravel Sail.
 
 ---
 
-## 🛠️ Getting Started
+## 🛠️ Cara Menjalankan Project di Lokal (Manual Book)
 
-Ikuti langkah-langkah berikut untuk menjalankan project ini secara lokal:
-
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/ibehhh/fdrix.git
-cd fdrix
+### 1. **Ekstrak File**
+Ekstrak `laravel.zip` ke direktori lokal, misalnya:
 ```
-
-### 2. Install Dependencies
-
-Pastikan Node.js dan npm/yarn sudah terinstall di sistem kamu. Kemudian jalankan:
-
-```bash
-npm install
-# atau
-yarn install
-```
-
-### 3. Setup Environment Variables
-
-Salin file `.env.example` menjadi `.env.local`:
-
-```bash
-cp .env.example .env.local
-```
-
-Lalu isi nilai-nilai environment variable sesuai konfigurasi lokal kamu, misalnya:
-
-```env
-NEXT_PUBLIC_API_URL=http://localhost:3000/api
-```
-
-### 4. Jalankan Server Development
-
-```bash
-npm run dev
-# atau
-yarn dev
-```
-
-Buka `http://localhost:3000` di browser untuk melihat hasilnya.
-
----
-
-## 🧪 Testing
-
-Jika tersedia testing, jalankan dengan:
-
-```bash
-npm run test
-# atau
-yarn test
+C:\xampp\htdocs\laravel\PORTOFOLIO
 ```
 
 ---
 
-## 🚀 Build & Deploy
+### 2. **Jalankan XAMPP**
 
-Untuk build aplikasi untuk production:
+- Buka **XAMPP Control Panel**
+- Aktifkan:
+  - `Apache`
+  - `MySQL`
 
+---
+
+### 3. **Copy `.env`**
+
+Salin file `.env.example` menjadi `.env`:
 ```bash
-npm run build
-npm start
-# atau
-yarn build
-yarn start
+cp .env.example .env
 ```
 
 ---
 
-## 📌 Catatan Tambahan
+### 4. **Install Dependency Composer**
 
-- Pastikan API atau database eksternal yang digunakan sudah berjalan sebelum menjalankan project.
-- Jika ada error saat running, periksa kembali `.env.local` dan pastikan semua dependency sudah terinstall.
-- Untuk styling atau komponen UI, project ini menggunakan TailwindCSS (cek dokumentasinya di [https://tailwindcss.com](https://tailwindcss.com)).
+Jalankan perintah ini di terminal dalam folder project:
+
+```bash
+composer install
+```
+
+> Jika `composer` belum diinstal, download di: https://getcomposer.org/download/
 
 ---
 
-## 📄 License
+### 5. **Generate Application Key**
 
-[MIT](LICENSE)
+```bash
+php artisan key:generate
+```
+
+---
+
+### 6. **Setup Database**
+
+- Buka `phpMyAdmin`
+- Buat database, misalnya `portofolio`
+- Di file `.env`, atur bagian ini:
+
+```
+DB_DATABASE=portofolio
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+---
+
+### 7. **Migrasi dan Seeder (Opsional)**
+
+Jika kamu punya file migrasi dan seeder:
+
+```bash
+php artisan migrate
+php artisan db:seed
+```
+
+---
+
+### 8. **Jalankan Server Laravel**
+
+```bash
+php artisan serve
+```
+
+Lalu buka browser di:
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## 🔐 Catatan Tambahan
+
+- Jangan lupa ubah permission folder `storage` dan `bootstrap/cache` jika error permission.
+- `.env` tidak disarankan diupload ke GitHub karena menyimpan konfigurasi sensitif.
+- Untuk memastikan semua fitur jalan, pastikan `mod_rewrite` Apache aktif.
 
 ---
 
 ## 👤 Author
 
-- **ibehhh** – [https://github.com/ibehhh](https://github.com/ibehhh)
-=======
-
->>>>>>> 1186a6749f82ace90c28ce71ad3f21e5c6be5354
+- Nama: [Kelompok]
+- GitHub: [https://github.com/ibehhh](https://github.com/ibehhh)
