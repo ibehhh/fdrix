@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 fdrix
 
 fdrix adalah [deskripsi singkat project kamu di sini, misalnya: "aplikasi web untuk manajemen data X berbasis Next.js dan Tailwind CSS."]
@@ -107,3 +108,6 @@ yarn start
 ## 👤 Author
 
 - **ibehhh** – [https://github.com/ibehhh](https://github.com/ibehhh)
+=======
+
+>>>>>>> 1186a6749f82ace90c28ce71ad3f21e5c6be5354
